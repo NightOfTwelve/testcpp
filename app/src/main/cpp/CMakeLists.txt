@@ -27,7 +27,7 @@ project("testcpp")
 add_library(${CMAKE_PROJECT_NAME} SHARED
         # List C/C++ source files with relative paths to this CMakeLists.txt.
         native-lib.cpp
-        test2.cpp)
+)
 
 # Specifies libraries CMake should link to your target library. You
 # can link libraries from various origins, such as libraries defined in this
@@ -38,9 +38,12 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         log)
 
 
-add_subdirectory(test2)
-add_executable(test0 test2.cpp)
-
+#add_subdirectory(test2)
+#add_subdirectory(test3)
+#add_executable(test0 test2.cpp)
+#add_executable(test1 test1.cpp)
+#
+add_subdirectory(insideObject)
 
 ##SET(CMAKE_BUILD_TYPE "Debug/Release/...”)
 #

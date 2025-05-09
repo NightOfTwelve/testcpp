@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 3.22.1)
 # Since this is the top level CMakeLists.txt, the project name is also accessible
 # with ${CMAKE_PROJECT_NAME} (both CMake variables are in-sync within the top level
 # build script scope).
-project("test")
+project("test3")
 
 #SET(CMAKE_BUILD_TYPE "Debug/Release/...”)
 
@@ -23,4 +23,4 @@ project("test")
 #SET(CMAKE_BUILD_TYPE Release)
 #set(CMAKE_BUILD_TYPE Debug)
 message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
-add_executable(test test2.cpp)
+add_executable(test3 test3.cpp)
